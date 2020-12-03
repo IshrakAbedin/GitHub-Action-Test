@@ -13,8 +13,8 @@ jobs:
       run: g++ ./src/Application.cpp -o ./bin/out
       shell: bash
     - name: Test C++ using Python
-      run: ./tests/test.py
-      shell: python
+      run: python3 ./tests/test.py
+      shell: bash
     # steps:
     # - name: Display the path
     #   run: echo $PATH
