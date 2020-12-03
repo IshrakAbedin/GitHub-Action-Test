@@ -5,7 +5,7 @@ def log(msg : str):
 
 log("Beginning Test")
 try:
-    subprocess.check_call(["bin/out", "Hello", "GitHub", "Action", ", Yey!"])
+    subprocess.check_call(["./bin/out", "Hello", "GitHub", "Action", ", Yey!"])
     log(f"Process Completed Successfull with Return Code <0>")
 except subprocess.CalledProcessError as error:
     log(f"Execution Failed with Returned Code <{error.returncode}>")
