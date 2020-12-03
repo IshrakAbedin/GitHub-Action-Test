@@ -4,14 +4,16 @@ jobs:
   build-n-test:
     runs-on: ubuntu-latest
     steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
     - name: Install gcc
       run: sudo apt-get install gcc
       shell: bash
     - name: Build C++
-      run: g++ ./src/Application.cpp ./bin/out
+      run: g++ src/Application.cpp bin/out
       shell: bash
     - name: Test C++ using Python
-      run: ./tests/test.py
+      run: tests/test.py
       shell: python
     # steps:
     # - name: Display the path
