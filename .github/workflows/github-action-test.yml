@@ -1,0 +1,13 @@
+name: github-action-test
+on: [push]
+jobs:
+  build-n-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build C++
+      - run: g++ ./src/Application.cpp ./bin/out
+      - shell: bash
+    steps:
+      - name: Test C++ using Python
+      - run: ./tests/test.py
+      - shell: python
