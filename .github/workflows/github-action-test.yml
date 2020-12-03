@@ -10,7 +10,7 @@ jobs:
       run: sudo apt-get install gcc
       shell: bash
     - name: Build C++
-      run: g++ ./src/Application.cpp ./bin/out
+      run: g++ ./src/Application.cpp -o ./bin/out
       shell: bash
     - name: Test C++ using Python
       run: ./tests/test.py
