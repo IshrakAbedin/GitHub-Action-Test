@@ -6,9 +6,9 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
-    - name: Install gcc
-      run: sudo apt-get install gcc
-      shell: bash
+    # - name: Install gcc
+    #   run: sudo apt-get install gcc
+    #   shell: bash
     - name: Build C++
       run: g++ ./src/Application.cpp -o ./bin/out
       shell: bash
