@@ -16,6 +16,7 @@ def log(msg : str):
     print(f"[{bcolors.OKBLUE}Python Tester{bcolors.ENDC}]:", msg)
 
 def main():
+    print("Dud")
     log("Beginning Tests")
     try:
         subprocess.check_call(["./bin/out", "Hello", "GitHub", "Action", ", Yey!"])
