@@ -3,14 +3,14 @@ on: [push]
 jobs:
   build-n-test:
     runs-on: ubuntu-latest
-    steps:
-      - name: Install gcc
-      run: sudo apt-get install gcc
-      shell: bash
-    steps:
-      - name: Build C++
-      run: g++ ./src/Application.cpp ./bin/out
-      shell: bash
+    # steps:
+    #   - name: Install gcc
+    #   run: sudo apt-get install gcc
+    #   shell: bash
+    # steps:
+    #   - name: Build C++
+    #   run: g++ ./src/Application.cpp ./bin/out
+    #   shell: bash
     steps:
       - name: Test C++ using Python
       run: ./tests/test.py
