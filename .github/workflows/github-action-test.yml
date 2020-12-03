@@ -2,7 +2,7 @@ name: github-action-test
 on: [push]
 jobs:
   build-n-test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     # steps:
     #   - name: Install gcc
     #   run: sudo apt-get install gcc
@@ -13,5 +13,5 @@ jobs:
     #   shell: bash
     steps:
       - name: Test C++ using Python
-      run: ./tests/test.py
-      shell: python
+      - run: ./tests/test.py
+      - shell: python
